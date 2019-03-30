@@ -1,7 +1,7 @@
 const app = require('express')();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => res.send('Hello, World!'));
+app.get('/', (req, res) => res.send('Hola, mundo!!'));
 app.get('/version', (req, res) => 
   res.status(200).send({
     COMMIT: process.env.GIT_COMMIT,
